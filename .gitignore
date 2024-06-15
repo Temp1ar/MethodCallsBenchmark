@@ -1,0 +1,63 @@
+# Git Ignores for Root Folder and File Masks Which Apply Everywhere
+# Please put local ignores to local ignore files
+
+##################
+## Root Folder
+
+# Build system files
+/NuGet.config
+/NuGet.Config
+/Packages/
+/Packages.*/
+/Build.DotSettings.user
+
+# Compiling result files
+[Bb]in/
+/Bin.*/
+[Oo]bj/
+
+# Idea files
+/.idea/
+/*.iws
+/.idea*.Generated/
+
+######################################
+## File Masks Which Apply Everywhere
+# Use with care! Files which are garbage for our main solution might be critical in test data or resources, only add what's 100% garbage always.
+
+# Visual Studio files
+.vs/
+ipch/
+*.sdf
+*.suo
+*.user
+*.User
+*.VC.db
+*.VC.opendb
+*.opensdf
+
+# R# Caches
+_ReSharper.Caches/
+
+# Generated files
+*QuickFixRegistrarGenerated.vb
+*QuickfixRegistrarGenerated.vb
+*.Generated.*
+*.generated.*
+
+# Temp files
+*.tmp
+*.tmp_proj
+*.orig
+*_wpftmp.*proj
+.DS_Store
+UpgradeLog.htm
+.~lock.*
+# Ignore Shell-generated thumbs files for folders with images.
+Thumbs.db
+# Log files
+*.log
+*.binlog
+
+# Vim files
+*.swp
